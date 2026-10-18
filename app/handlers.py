@@ -14,3 +14,7 @@ async def cmd_start(message: Message) -> None:
 @router.message(Command("help"))
 async def cmd_help(message: Message) -> None:
     await message.answer(texts.HELP)
+
+@router.message(Command("habits"))
+async def cmd_habits(message: Message) -> None:
+    await message.answer(texts.HABITS)
